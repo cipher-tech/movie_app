@@ -32322,7 +32322,7 @@
 	        Route,
 	        { path: 'movies', component: Movies },
 	        React.createElement(Route, { path: ':id', component: Movie }),
-	        React.createElement(Route, { path: 'movies/:id', component: Movie })
+	        React.createElement(Route, { exact: true, path: 'movies/:id', component: Movie })
 	      )
 	    )
 	  )
