@@ -32310,7 +32310,7 @@
 
 	module.exports = React.createElement(
 	  Router,
-	  { history: hashHistory },
+	  { history: browserHistory },
 	  React.createElement(
 	    Route,
 	    { path: '/', component: App },
