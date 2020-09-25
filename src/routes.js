@@ -11,7 +11,7 @@ const Movies = require('components/movies/movies.js')
 const Movie = require('components/movie/movie.js')
 
 module.exports = (
-  <Router history={hashHistory}>
+  <Router history={browserHistory}>
     <Route path="/" component={App}>
       <Route path="/movie_app" component={App}>
         <IndexRoute component={Movies} />
