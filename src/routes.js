@@ -12,7 +12,7 @@ const Movie = require('components/movie/movie.js')
 
 module.exports = (
   <Router history={browserHistory}>
-    {/* <Route path="/movie_app" component={App}> */}
+    <Route path="/movie_app" component={App}>
       <Route path="/" component={App}>
         <IndexRoute component={Movies} />
         <Route path="movies" component={Movies}>
@@ -20,6 +20,6 @@ module.exports = (
           <Route exact path="movies/:id" component={Movie} />
         </Route>
       </Route>
-    {/* </Route> */}
+    </Route>
   </Router>
 )
