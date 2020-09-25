@@ -32312,7 +32312,7 @@
 	  { history: browserHistory },
 	  React.createElement(
 	    Route,
-	    { path: '/', component: App },
+	    { path: ["/", "/movie_app"], component: App },
 	    React.createElement(IndexRoute, { component: Movies }),
 	    React.createElement(
 	      Route,
