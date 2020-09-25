@@ -14,7 +14,7 @@
   },
   "author": "Onubogu Chibuikem",
   "license": "MIT",
-  "homepage": "https://github.com/cipher-tech/movie_app.git",
+  "homepage": "https://github.com/cipher-tech/movie_app",
   "devDependencies": {
     "babel-core": "6.11.4",
     "babel-eslint": "6.1.2",
