@@ -37995,7 +37995,7 @@
 	module.exports = [
 		{
 			"title": "Pirates of the Caribbean: On Stranger Tides",
-			"cover": "/images/On_Stranger_Tides_Poster.jpg",
+			"cover": "./images/On_Stranger_Tides_Poster.jpg",
 			"year": "2011",
 			"cost": 378.5,
 			"starring": [
