@@ -32310,15 +32310,19 @@
 
 	module.exports = React.createElement(
 	  Router,
-	  { history: browserHistory },
+	  { history: hashHistory },
 	  React.createElement(
 	    Route,
 	    { path: '/', component: App },
-	    React.createElement(IndexRoute, { component: Movies }),
 	    React.createElement(
 	      Route,
-	      { path: 'movies', component: Movies },
-	      React.createElement(Route, { path: ':id', component: Movie })
+	      { path: '/movie_app', component: App },
+	      React.createElement(IndexRoute, { component: Movies }),
+	      React.createElement(
+	        Route,
+	        { path: 'movies', component: Movies },
+	        React.createElement(Route, { path: ':id', component: Movie })
+	      )
 	    )
 	  )
 	);
