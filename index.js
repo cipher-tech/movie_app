@@ -32325,7 +32325,10 @@
 	        React.createElement(Route, { path: 'movies/:id', component: Movie })
 	      )
 	    )
-	  )
+	  ),
+	  React.createElement(Route, { path: '*', render: function render() {
+	      return "hllo";
+	    } })
 	);
 
 /***/ },
