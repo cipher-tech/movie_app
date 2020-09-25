@@ -32314,15 +32314,12 @@
 	  React.createElement(
 	    Route,
 	    { path: '/', component: App },
+	    React.createElement(IndexRoute, { component: Movies }),
 	    React.createElement(
 	      Route,
-	      { path: '/movie_app', component: App },
-	      React.createElement(IndexRoute, { component: Movies }),
-	      React.createElement(
-	        Route,
-	        { path: 'movies', component: Movies },
-	        React.createElement(Route, { path: ':id', component: Movie })
-	      )
+	      { path: 'movies', component: Movies },
+	      React.createElement(Route, { path: ':id', component: Movie }),
+	      React.createElement(Route, { exact: true, path: 'movies/:id', component: Movie })
 	    )
 	  )
 	);
