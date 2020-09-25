@@ -32301,7 +32301,8 @@
 	    Router = _require.Router,
 	    Route = _require.Route,
 	    IndexRoute = _require.IndexRoute,
-	    browserHistory = _require.browserHistory;
+	    browserHistory = _require.browserHistory,
+	    hashHistory = _require.hashHistory;
 
 	var App = __webpack_require__(602);
 	var Movies = __webpack_require__(607);
@@ -32309,13 +32310,13 @@
 
 	module.exports = React.createElement(
 	  Router,
-	  { history: browserHistory },
+	  { history: hashHistory },
 	  React.createElement(
 	    Route,
-	    { path: '/movie_app', component: App },
+	    { path: '/', component: App },
 	    React.createElement(
 	      Route,
-	      { path: '/', component: App },
+	      { path: '/movie_app', component: App },
 	      React.createElement(IndexRoute, { component: Movies }),
 	      React.createElement(
 	        Route,
